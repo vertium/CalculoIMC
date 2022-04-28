@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btLimpiarM = (Button)findViewById(R.id.btLimpiar);
+        btCalcularM = (Button)findViewById(R.id.btCalcular);
         etAlturaM =(EditText)findViewById(R.id.etAltura);
         etPesoM =(EditText)findViewById(R.id.etPeso);
         tvResultadoM =(TextView)findViewById(R.id.tvResultado);
@@ -38,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
                 fPeso=Float.parseFloat(etPesoM.getText().toString());
                 fResultado=fPeso/(fAltura*fAltura);
                 tvResultadoM.setText("Su IMC es: "+fResultado);
-
             }
         });
     }
